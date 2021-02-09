@@ -20,7 +20,7 @@
         <div id="app" class="cds-container container">
             <!-- Disco ad esempio -->
             <select name="">
-                <option @click="changeGenre(index)" v-for='(val, index) in genreArray' value="val">{{val}}</option>
+                <option @click="changeGenre(index)"  v-for='(val, index) in genreArray' value="val">{{val}}</option>
             </select>
             <div v-for="item in showArray" class="cd">
                 <img :src="item.poster" alt="">
