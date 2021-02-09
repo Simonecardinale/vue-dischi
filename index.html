@@ -19,11 +19,15 @@
 
         <div id="app" class="cds-container container">
             <!-- Disco ad esempio -->
-            <div v-for="item in allMusic" class="cd">
+            <select name="">
+                <option @click="changeGenre(index)" v-for='(val, index) in genreArray' value="val">{{val}}</option>
+            </select>
+            <div v-for="item in showArray" class="cd">
                 <img :src="item.poster" alt="">
                 <h3>{{item.title}}</h3>
                 <span class="author">{{item.author}}</span>
                 <span class="year">{{item.year}}</span>
+                <span class="author">{{item.genre}}</span>
             </div>
         </div>
         
